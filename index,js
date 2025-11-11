@@ -1,0 +1,14 @@
+let Valid = false; 
+while (!Valid) { 
+    const username = prompt("Enter username");
+    const password = prompt("Enter password");
+
+    if (username === "livewire" && password === "livewire@123") {
+        console.log("Valid");
+        Valid = true; 
+    } 
+    else 
+    {
+        console.log("Invalid username or password. Please try again.");
+    }
+}

@@ -1,0 +1,220 @@
+html{
+    animation: body 2s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-image: url(4822397.webp);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    color: #2c3e50;
+}
+
+@keyframes body {
+    from {
+        background-image:url(4822397.webp);
+        background-size: cover;
+        background-position:center;
+        opacity: 0.8;
+    }
+    to {
+        background-image:url(4822397.webp);
+        background-size: cover;
+        background-position:center;
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #eaebec;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.form-group:hover {
+    transform: translateY(5px);
+    color: #e1e4c8;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #c3dae99f;
+    transition: color 0.3s;
+}
+
+.form-group:hover label {
+    color: #16a085;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.2);
+}
+
+input:hover, select:hover, textarea:hover {
+    border-color: #16a085;
+}
+
+button {
+    background: linear-gradient(135deg, #032236, #01362c);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #16a085, #2980b9);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transform: translateY(2px);
+}
+
+.required {
+    color: #e74c3c;
+}
+
+/* Decorative elements */
+.form-container {
+    background-color: #0c141360;
+    background-position: center;
+    background-size: cover;
+    opacity:0.9;
+    padding: 30px;
+    border-style: ridge;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(233, 222, 222, 0.322);
+}
+
+.form-container:hover{
+    opacity: 1;
+    transform: scale(1.04,1.04);
+    transition: all 0.1s linear;
+}
+
+/* Custom select styling */
+select {
+    appearance: none;
+    background-image: url(images/icons/th\ \(1\).jpg);
+    background-repeat: no-repeat;
+    rotate: (90deg);
+    background-position: right 12px top 50%;
+    background-size: 12px auto;
+    padding-right: 30px;
+}
+
+/* Animated placeholder */
+input::placeholder, textarea::placeholder {
+    transition: opacity 0.3s ease;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    opacity: 0.5;
+}
+
+/* Section headers */
+.section-header {
+    color: #bce0eb;
+    font-size: 1.2em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+        margin: 20px;
+        padding: 15px;
+    }
+    
+    .form-container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .section-header {
+        font-size: 1.1em;
+    }
+    
+    button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    .form-container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.3em;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    input, select, textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    button {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    
+    .section-header {
+        font-size: 1em;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+    }
+}

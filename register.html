@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Photography Session Booking</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Wedding Photography Session Booking</h1>
+
+        <form action="index.html" id="weddingForm">
+            <div class="section-header">Couple Details</div>
+            <div class="form-group">
+                <label>Couple's Names <span class="required">*</span></label>
+                <input type="text" name="coupleNames" required placeholder="Partner 1 & Partner 2">
+            </div>
+
+            <div class="section-header">Event Information</div>
+            <div class="form-group">
+                <label>Wedding Date <span class="required">*</span></label>
+                <input type="date" name="weddingDate" required>
+            </div>
+
+            <div class="form-group">
+                <label>Venue Location <span class="required">*</span></label>
+                <input type="text" name="venue" required placeholder="Wedding venue name and address">
+            </div>
+
+            <div class="section-header">Contact Information</div>
+            <div class="form-group">
+                <label>Contact Email <span class="required">*</span></label>
+                <input type="email" name="email" required placeholder="your@email.com">
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number <span class="required">*</span></label>
+                <input type="tel" name="phone" required placeholder="(123) 456-7890">
+            </div>
+
+            <div class="section-header">Package Selection</div>
+            <div class="form-group">
+                <label>Photography Package</label>
+                <select name="package">
+                    <option value="basic">Wedding</option>
+                    <option value="standard">earpiercing</option>
+                    <option value="premium">house warming</option>
+                    <option value="custom">Custom package</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Special Requests or Notes</label>
+                <textarea name="notes" rows="4"
+                    placeholder="Tell us about any special requests or specific shots you'd like"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Preferred Time</label>
+                <input type="time" name="preferredTime">
+            </div>
+
+            <div class="form-group">
+                <label>days</label>
+                <input type="number" name="guestCount" placeholder="100">
+            </div>
+
+            <button type="submit">Submit Booking Request</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

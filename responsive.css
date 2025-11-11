@@ -1,0 +1,355 @@
+/* Base styles */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Large devices (desktops, 1200px and down) */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .services .box {
+        width: 50%;
+        min-width: 250px;
+    }
+    
+    .header .box {
+        max-width: 60%;
+    }
+}
+
+/* Medium devices (tablets, 992px and down) */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 45px;
+    }
+    
+    h2 {
+        font-size: 35px;
+    }
+    
+    .header .box {
+        max-width: 70%;
+    }
+    
+    .services .box {
+        width: 50%;
+    }
+    
+    .about .container,
+    .services .container,
+    .contact .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-img {
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    section .box {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .about ul {
+        align-items: center;
+    }
+    
+    .about-bottom {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .contact .box-r {
+        margin-top: 40px;
+    }
+    
+    .grid-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Small devices (landscape phones, 768px and down) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    h1 {
+        font-size: 35px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    .navbar .container {
+        flex-direction: column;
+        padding: 1rem 15px;
+    }
+    
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .navbar-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .header .box {
+        max-width: 100%;
+        padding: 0 10px;
+        text-align: center;
+    }
+    
+    .header .box .btn {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        max-width: 200px;
+    }
+    
+    .services .box {
+        width: 100%;
+        min-width: auto;
+        border: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+    
+    .border-01, .border-02, .border-03, .border-04, .border-05, .border-06 {
+        justify-content: center !important;
+        border-right: none !important;
+        border-left: none !important;
+    }
+    
+    .about .container,
+    .services .container,
+    .contact .container,
+    .footer .container {
+        flex-direction: column;
+    }
+    
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .form-box .one-line {
+        flex-direction: column;
+    }
+    
+    .form-box .box-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .footer .newsletter .container,
+    .footer .second-footer .container,
+    .footer .copyright {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer .social-icons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .copyright {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .gallery ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .grid-wrapper {
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* Extra small devices (portrait phones, 576px and down) */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 25px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .navbar .container {
+        padding: 0.8rem 10px;
+    }
+    
+    .heading {
+        padding-top: 1rem;
+    }
+    
+    .header {
+        min-height: 80vh;
+    }
+    
+    .services .item {
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .contact .one-line {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .contact ul li {
+        font-size: 16px;
+    }
+    
+    .contact ul span {
+        font-size: 14px;
+    }
+    
+    .newsletter .form form {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .newsletter .form form input {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .newsletter .form form button {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .second-footer {
+        padding: 2rem 0;
+    }
+    
+    .grid-wrapper {
+        grid-template-columns: 1fr;
+        grid-gap: 8px;
+    }
+    
+    .grid-wrapper .wide,
+    .grid-wrapper .tall {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* Extra extra small devices (small phones, 400px and down) */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    .container {
+        padding: 0 5px;
+    }
+    
+    .navbar .container {
+        padding: 0.5rem 5px;
+    }
+    
+    .header .box .btn {
+        width: 90%;
+        padding: 0.5rem;
+        font-size: 13px;
+    }
+    
+    .contact .form-box {
+        padding: 1rem 0.5rem;
+    }
+    
+    .contact .box-input {
+        padding: 0.5rem 0;
+    }
+    
+    .second-footer .box {
+        padding: 0 10px;
+    }
+}
+
+/* Fix for specific elements */
+.items {
+    margin-left: 0;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure form elements are responsive */
+input, textarea, select {
+    max-width: 100%;
+}
+
+/* Fix for gallery filter buttons */
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.gallery li {
+    font-size: 14px;
+    line-height: 21px;
+    color: #999;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.gallery .active,
+.gallery li:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: none;
+}
